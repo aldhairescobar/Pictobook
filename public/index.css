@@ -29,6 +29,10 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Typography */
 
 a {
@@ -105,6 +109,39 @@ main.cart-page {
   padding: 10px;
 } */
 
+img.image-grid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.image-container {
+  position: relative;
+}
+
+.favorite {
+  color: #39f6d7;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.ri-heart-fill {
+  opacity: 0.7;
+}
+
+.cart {
+  color: #39f6d7;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
 .cart-page > h1 {
   text-align: center;
 }
@@ -146,41 +183,9 @@ div.order-button > button:disabled {
   margin-left: 10px;
 }
 
-img.image-grid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-container {
-  position: relative;
-}
-
-.favorite {
-  color: var(--red);
-  font-size: 1.2rem;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  cursor: pointer;
-}
-
-.ri-heart-fill {
-  opacity: 0.7;
-}
-
 .ri-delete-bin-line,
 .ri-delete-bin-fill {
   font-size: 1.3em;
-  cursor: pointer;
-}
-
-.cart {
-  color: var(--blue);
-  font-size: 1.2rem;
-  position: absolute;
-  top: 5px;
-  right: 5px;
   cursor: pointer;
 }
 
