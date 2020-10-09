@@ -130,7 +130,7 @@ img.image-grid {
 }
 
 .ri-heart-fill {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .cart {
@@ -141,6 +141,8 @@ img.image-grid {
   right: 5px;
   cursor: pointer;
 }
+
+/* cart */
 
 .cart-page > h1 {
   text-align: center;
@@ -178,9 +180,18 @@ div.order-button > button:disabled {
   margin: 20px 0;
 }
 
-.cart-item img {
+.item-price {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.cart-item-img {
   margin-right: auto;
   margin-left: 10px;
+  height: 140px;
+  width: 140px;
+
+  object-fit: cover;
 }
 
 .ri-delete-bin-line,

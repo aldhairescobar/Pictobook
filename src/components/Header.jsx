@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../Context";
 
 function Header() {
+  const { cartItems } = useContext(Context);
+
   return (
     <header>
       <div className="container container-flex">
@@ -15,7 +18,13 @@ function Header() {
             <span className="nav-link">Artists</span>
           </Link>
           <Link to="/cart">
-            <i className="ri-shopping-cart-line ri-fw ri-2x cart-icon"></i>
+            <i
+              className={`${
+                cartItems.length > 0
+                  ? "ri-shopping-cart-fill"
+                  : "ri-shopping-cart-line"
+              } ri-fw ri-xl cart-icon`}
+            ></i>
           </Link>
         </nav>
       </div>
