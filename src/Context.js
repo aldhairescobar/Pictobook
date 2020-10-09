@@ -45,6 +45,7 @@ function ContextProvider(props) {
         cartItems,
         addToCart,
         removeCartItem,
+        setCartItems,
       }}
     >
       {props.children}

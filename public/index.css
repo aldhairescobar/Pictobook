@@ -144,6 +144,10 @@ img.image-grid {
 
 /* cart */
 
+.cart-page {
+  margin-bottom: 3rem;
+}
+
 .cart-page > h1 {
   text-align: center;
 }
