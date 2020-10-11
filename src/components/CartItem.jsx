@@ -13,7 +13,7 @@ function CartItem({ item }) {
         className={`ri-delete-bin-${hovered ? "fill" : "line"}`}
         onClick={() => removeCartItem(item.id)}
       ></i>
-      <img className="cart-item-img" src={item.url} />
+      <img className="cart-item-img" alt="" src={item.url} />
       <p className="item-price">$5.99</p>
     </div>
   );

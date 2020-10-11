@@ -1,12 +1,16 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../Context";
 import PropTypes from "prop-types";
+import { useMediaQuery } from 'react-responsive'
+
 
 function Image({ img, className }) {
   const [hovered, setHovered] = useState(false);
   const { toggleFavorite, addToCart, cartItems, removeCartItem } = useContext(
     Context
   );
+
+  const isBigScreen = useMediaQuery({ query: '(min-width: 769px)' })
 
   function heartIcon() {
     if (img.isFavorite) {
@@ -26,9 +30,9 @@ function Image({ img, className }) {
     }
   }
 
-  function cartIcon() {
-    const alreadyInCart = cartItems.some((photo) => photo.id === img.id);
+  const alreadyInCart = cartItems.some((photo) => photo.id === img.id);
 
+  function cartIcon() {
     if (alreadyInCart) {
       return (
         <i
@@ -46,6 +50,8 @@ function Image({ img, className }) {
     }
   }
 
+  /* I'm using media query to render a div (my component) depending of the width */
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -53,8 +59,36 @@ function Image({ img, className }) {
       className={`${className} image-container`}
     >
       <img src={img.url} alt="" className="image-grid" />
-      {heartIcon()}
-      {cartIcon()}
+
+              {isBigScreen ? <> 
+              {heartIcon()}
+              {cartIcon()}
+              </> : <>
+              {img.isFavorite ? (
+                <i
+                  onClick={() => toggleFavorite(img.id)}
+                  className="ri-heart-fill favorite"
+                ></i>
+              ) : (
+                <i
+                  onClick={() => toggleFavorite(img.id)}
+                  className="ri-heart-line favorite"
+                ></i>
+              )}
+
+              {alreadyInCart ? (
+                <i
+                  onClick={() => removeCartItem(img.id)}
+                  className="ri-shopping-cart-fill cart"
+                ></i>
+              ) : (
+                <i
+                  onClick={() => addToCart(img)}
+                  className="ri-add-circle-line cart"
+                ></i>
+              )}
+              </>
+              }
     </div>
   );
 }
