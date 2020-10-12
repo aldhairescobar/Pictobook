@@ -14,8 +14,8 @@ function Header() {
           </span>
         </Link>
         <nav className="nav">
-          <Link to="/artists">
-            <span className="nav-link">Artists</span>
+          <Link className="nav-link" to="/artists">
+            <span>Artists</span>
           </Link>
           <Link to="/cart">
             <i

@@ -17,14 +17,14 @@ function Image({ img, className }) {
       return (
         <i
           onClick={() => toggleFavorite(img.id)}
-          className="ri-heart-fill favorite"
+          className="ri-heart-fill favorite-icon"
         ></i>
       );
     } else if (hovered) {
       return (
         <i
           onClick={() => toggleFavorite(img.id)}
-          className="ri-heart-line favorite"
+          className="ri-heart-line favorite-icon"
         ></i>
       );
     }
@@ -37,14 +37,14 @@ function Image({ img, className }) {
       return (
         <i
           onClick={() => removeCartItem(img.id)}
-          className="ri-shopping-cart-fill cart"
+          className="ri-shopping-cart-fill add-icon"
         ></i>
       );
     } else if (hovered) {
       return (
         <i
           onClick={() => addToCart(img)}
-          className="ri-add-circle-line cart"
+          className="ri-add-circle-line add-icon"
         ></i>
       );
     }
@@ -67,24 +67,24 @@ function Image({ img, className }) {
               {img.isFavorite ? (
                 <i
                   onClick={() => toggleFavorite(img.id)}
-                  className="ri-heart-fill favorite"
+                  className="ri-heart-fill favorite-icon"
                 ></i>
               ) : (
                 <i
                   onClick={() => toggleFavorite(img.id)}
-                  className="ri-heart-line favorite"
+                  className="ri-heart-line favorite-icon"
                 ></i>
               )}
 
               {alreadyInCart ? (
                 <i
                   onClick={() => removeCartItem(img.id)}
-                  className="ri-shopping-cart-fill cart"
+                  className="ri-shopping-cart-fill add-icon"
                 ></i>
               ) : (
                 <i
                   onClick={() => addToCart(img)}
-                  className="ri-add-circle-line cart"
+                  className="ri-add-circle-line add-icon"
                 ></i>
               )}
               </>
