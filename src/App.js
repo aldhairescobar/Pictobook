@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Cart from "./pages/Cart";
 import Photos from "./pages/Photos";
 import Artists from "./pages/Artists";
+import ArtistCollection from "./pages/ArtistCollection";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,11 +15,14 @@ function App() {
         <Route exact path="/">
           <Photos />
         </Route>
-        <Route path="/artists">
+        <Route exact path="/artists">
           <Artists />
         </Route>
         <Route path="/cart">
           <Cart />
+        </Route>
+        <Route path="/artists/:artistName">
+          <ArtistCollection />
         </Route>
       </Switch>
     </div>
