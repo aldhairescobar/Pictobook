@@ -15,5 +15,6 @@ function ArtistCollectionCard(){
 export default ArtistCollectionCard
 
 /**
- * Fix: I need more pictures from another artists to get the names and reuse this component.
+ * Fix: I need more pictures from another artists to get the names and reuse this component.(future)
+ * Take name as a props (future)
  */

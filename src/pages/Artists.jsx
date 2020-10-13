@@ -19,7 +19,7 @@ function Artists() {
 export default Artists;
 
 /**
- * Would be fine to get more data (artists) in order to reuse my "ArtistCard" component.
- * useParams
- * props - name - image url
+ * It would be fine to get more data (artists) in order to reuse my "ArtistCard" component. (future)
+ * We can render the "Link" depending of how many artists we have... (future)
+ * We can give some props to our "ArtistCard" component like "name" and "image url" (future)
  * */ 

@@ -20,7 +20,7 @@ function ArtistCollection(){
      return(
           <div className="artist-collection container">
                <ArtistCollectionCard />
-               <p className="artist-collection-title">Willy Serdan Collection</p>
+               <p className="artist-collection-title container">Willy Serdan Collection</p>
                <main className="photos container">{photos}</main>
           </div>
      )
@@ -29,8 +29,7 @@ function ArtistCollection(){
 export default ArtistCollection
 
 /**
- * name, description, image. (hardcoded) card-
- * get the name with useParams and render the photos
- *  props - name - image url
- * 
+ * "ArtistCollectionCard" can take some props like "name - image url" (future)
+ * In this component I'm getting the name with useParams and render the photos.
+ * The paragraph element can take the name as "props" (future)
  * */

@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header>
-      <div className="header-container container-flex">
+      <div className="header-container container container-flex">
         <Link to="/">
           <span className="logo-name">
             pictobook <i className="ri-polaroid-2-line camera-icon"></i>
