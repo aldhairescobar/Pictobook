@@ -229,6 +229,16 @@ img.image-grid {
   color: black;
 }
 
+@media (max-width: 576px) {
+  .artists-page {
+    text-align: center;
+  }
+
+  .artists-card-container {
+    margin: 2.5rem auto 0;
+  }
+}
+
 /* Artist Collection Page - Cards */
 
 .artist-collection-card {
@@ -311,12 +321,23 @@ img.image-grid {
 div.order-button > button {
   border-color: var(--black);
   cursor: pointer;
-  padding: 15px;
+  padding: 0.5em 1.5em;
+  color: var(--white);
+  border-radius: 0.3em;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: var(--purple);
   transition: all 0.2s ease-in-out;
 }
 
 div.order-button > button:focus {
   outline: none;
+  transform: scale(1.03);
+}
+
+div.order-button > button:hover {
+  outline: none;
+  transform: scale(1.03);
 }
 
 div.order-button > button:disabled {

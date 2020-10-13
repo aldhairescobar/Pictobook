@@ -20,8 +20,8 @@ function ArtistCollection(){
      return(
           <div className="artist-collection container">
                <ArtistCollectionCard />
-               <p className="artist-collection-title container">Willy Serdan Collection</p>
-               <main className="photos container">{photos}</main>
+               <p className="artist-collection-title">Willy Serdan Collection</p>
+               <main className="photos">{photos}</main>
           </div>
      )
 }
