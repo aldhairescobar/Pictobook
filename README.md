@@ -1,6 +1,34 @@
 # Pictobook (ReactJS)
 
+A platform where you can get some images and purchase their usage rights.
+
+## What I Learned
+
+- I used "useContext" to keep a clean code and use data all over my app.
+- How to use "React Router - (Link, Route, Switch)".
+- How to use "useParams".
+- I used PropTypes to make sure the component receives the data.
+- I implemented "react-responsive" to add a "new" implementation with the images in mobile or tablet.
+
+## Demo
+
+https://pictobook-app.herokuapp.com/
+
+<img width="656" alt="picto" src="https://user-images.githubusercontent.com/63808163/95936710-d6d04f00-0d9b-11eb-87ae-94599915d901.PNG">
+
+## Built with
+
+- ReactJS
+- CSS
+- React Router
+- React Responsive
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### React README
+
+<details>
+     <summary>Click to expand!</summary>
 
 ## Available Scripts
 
@@ -68,3 +96,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+</details>
